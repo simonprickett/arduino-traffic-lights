@@ -71,7 +71,27 @@ The Adafruit board requires you to download a driver and get the ESP8266 board p
 
 ## Coding
 
-TODO
+The majority of the code for both boards is identical.  Where it differs is in the pin numbers used to control the lights.  To distinguish between the boards at compile time, I check to see if `ARDUINO_AVR_UNO` is defined, and use the pin numbers for the Uno if so, otherwise the pins for the Huzzah are used.
+
+```
+  
+#ifdef ARDUINO_AVR_UNO
+// Arduino Uno
+const byte redLight = 13;
+const byte amberLight = 12;
+const byte greenLight = 11;
+#else
+// Adafruit Feather Huzzah
+const byte redLight = 14;
+const byte amberLight = 12;
+const byte greenLight = 13;
+#endif
+```
+
+The rest of the code is the same for both boards, and works as follows:
+
+* In the `setup()` function that runs once when the board is powered on, I set each of the three pins for the traffic lights to be outputs, and set them to be low (off).
+* In the `loop()` function that runs continuously after `setup()` has been called one, I use an infinite `while` loop, then set each pin to be high or low as required for each state of the traffic light sequence.  The `delay()` function s used to wait an appropriate number of milliseconds before transitioning to the next state.
 
 ## Deployment to the Arduino Boards
 
