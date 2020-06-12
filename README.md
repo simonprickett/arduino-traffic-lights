@@ -67,6 +67,8 @@ If your development machine doesn't run Mac OS you may need to perform different
 
 ### Setup for the Adafruit Huzzah ESP8266
 
+The Adafruit board requires you to download a driver and get the ESP8266 board package for the Arduino IDE.  There's a [guide for this over at Adafruit](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide).
+
 ## Coding
 
 TODO
