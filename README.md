@@ -53,7 +53,11 @@ Here's a pinout for the Huzzah showing where the pins we'll need are:
 
 ![Adafruit Feather Huzzah](adafruit_feather_huzzah.jpg)
 
-TODO breadboard setup...
+Here's how we'd wire up the breadboard, the blue rectangle here represents where you'd plug the traffic lights into.
+
+![Breadboard sketch](breadboard_sketch.png)
+
+We're assuming here that the Feather is powered from a micro USB cable not from the breadboard.
 
 ## Arduino Development Environment Setup
 
