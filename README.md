@@ -111,4 +111,6 @@ In both cases, don't forget to also choose the right USB port which should be th
 
 ![Selecting the Port for Arduino Uno](arduino_uno_port.png)
 
-Once deployed, the Arduino should restart and being executing the code... if all is well you should see the traffic lights operating in the right sequence.
+Once deployed, the Arduino should restart and being executing the code... if all is well you should see the traffic lights operating in the right sequence!
+
+![Working Arduinos](arduinos_working.jpg)
