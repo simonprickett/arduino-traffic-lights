@@ -59,7 +59,7 @@ TODO breadboard setup...
 
 We'll need the [Arduino IDE](https://www.arduino.cc/en/Main/Software)... I found on Mac OS Catalina I had to get the latest beta version to avoid issues compiling code later on.  This is related to the 64 bit nature of newer Mac OS releases.
 
-### Setup for the Ardiuno Uno
+### Setup for the Arduino Uno
 
 There should be nothing more needed for the Arduino Uno... if you connect it to your maching using a USB A<->B cable and choose "Arduino Uno" as your board and the appropriate USB port as your port that's all you need to do.
 
@@ -67,7 +67,7 @@ If your development machine doesn't run Mac OS you may need to perform different
 
 ### Setup for the Adafruit Huzzah ESP8266
 
-The Adafruit board requires you to download a driver and get the ESP8266 board package for the Arduino IDE.  There's a [guide for this over at Adafruit](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide).
+The Adafruit board requires you to download a driver and get the ESP8266 board package for the Arduino IDE.  There's a [guide for this over at Adafruit](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide).  You'll also need a USB to micro USB data cable, the same as you might use with a lot of Android phones.
 
 ## Coding
 
@@ -95,4 +95,20 @@ The rest of the code is the same for both boards, and works as follows:
 
 ## Deployment to the Arduino Boards
 
-TODO
+To deploy to the Arduino boards, connect one of them using a USB data cable, then select the correct board...
+
+Arduino Uno:
+
+![Selecting the Arduino Uno](select_board_uno.png)
+
+Adafruit Feather Huzzah:
+
+![Selecting the Adafruit Huzzah](select_board_feather.png)
+
+Note the Adafruit Feather Huzzah is under ESP9266 Boards rather than the Adadfruit Boards that you may also have installed for other boards that you own.
+
+In both cases, don't forget to also choose the right USB port which should be the one that appears when you plug the board in.  Here's an example with the Uno...
+
+![Selecting the Port for Arduino Uno](arduino_uno_port.png)
+
+Once deployed, the Arduino should restart and being executing the code... if all is well you should see the traffic lights operating in the right sequence.
