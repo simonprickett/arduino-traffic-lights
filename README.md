@@ -1,6 +1,6 @@
 # Arduino Traffic Lights
 
-Experimenting with Arduino Boards and Low Voltage Labs Traffic Lights.
+Experimenting with Arduino Boards and Low Voltage Labs Traffic Lights.  Read the [full blog post on my site](https://simonprickett.dev/traffic-lights-with-arduino/).
 
 ## Introduction
 
